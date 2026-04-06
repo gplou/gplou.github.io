@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — ExpenseManager</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    h2 { font-size: 1.2rem; font-weight: 700; margin: 36px 0 10px; color: #111; }
+    p  { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 24px; }
+    li { margin-bottom: 6px; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 40px; }
+    a  { color: #0066cc; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f5f5f5; font-weight: 600; }
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .lang-toggle button {
+      padding: 6px 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .lang-toggle button.active {
+      background: #1a1a1a;
+      color: #fff;
+      border-color: #1a1a1a;
+    }
+    #en { display: none; }
+  </style>
+</head>
+<body>
+
+<div class="lang-toggle">
+  <button class="active" onclick="showLang('es', this)">Español</button>
+  <button onclick="showLang('en', this)">English</button>
+</div>
+
+<!-- ===== ESPAÑOL ===== -->
+<div id="es">
+  <h1>Política de Privacidad</h1>
+  <p class="meta">Última actualización: 6 de abril de 2026</p>
+
+  <p>
+    Esta Política de Privacidad describe cómo <strong>ExpenseManager</strong> ("la App", "nosotros") recopila,
+    usa y protege tu información personal cuando utilizas nuestra aplicación móvil de gestión de gastos personales.
+    Al usar la App aceptas las prácticas descritas en este documento.
+  </p>
+
+  <h2>1. Información que recopilamos</h2>
+
+  <h2>1.1 Información que tú proporcionas</h2>
+  <ul>
+    <li><strong>Cuenta:</strong> dirección de correo electrónico y contraseña (o datos de autenticación de Google / Apple).</li>
+    <li><strong>Transacciones financieras:</strong> importes, categorías, fechas, notas y adjuntos de gastos e ingresos que introduces manualmente.</li>
+    <li><strong>Categorías personalizadas:</strong> nombres e iconos que creas para organizar tus transacciones.</li>
+    <li><strong>Fotos de tickets/facturas:</strong> imágenes que subes voluntariamente para que la IA extraiga los datos del gasto.</li>
+    <li><strong>Grabaciones de voz:</strong> audio que grabas voluntariamente para registrar transacciones mediante dictado.</li>
+  </ul>
+
+  <h2>1.2 Información recopilada automáticamente</h2>
+  <ul>
+    <li><strong>Datos de uso:</strong> pantallas visitadas, acciones realizadas, errores y eventos de interacción, recopilados de forma anonimizada mediante PostHog.</li>
+    <li><strong>Información del dispositivo:</strong> modelo, sistema operativo y versión de la App, utilizados para diagnóstico técnico.</li>
+    <li><strong>Estado de suscripción:</strong> información sobre tu plan (gratuito/PRO) y compras realizadas, gestionada por RevenueCat.</li>
+  </ul>
+
+  <h2>2. Cómo usamos tu información</h2>
+  <table>
+    <thead>
+      <tr><th>Finalidad</th><th>Datos usados</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Autenticarte y mantener tu sesión</td><td>Correo, contraseña / token OAuth</td></tr>
+      <tr><td>Almacenar y sincronizar tus transacciones en la nube</td><td>Transacciones, categorías</td></tr>
+      <tr><td>Procesar transacciones recurrentes automáticas</td><td>Configuración de recurrencia</td></tr>
+      <tr><td>Analizar tickets/facturas con IA (Claude)</td><td>Imágenes de fotos (se envían a la API y no se almacenan)</td></tr>
+      <tr><td>Transcribir y procesar comandos de voz con IA (Claude)</td><td>Audio de voz (procesado localmente; el texto resultante se envía a la API)</td></tr>
+      <tr><td>Gestionar suscripciones e in-app purchases</td><td>ID de usuario, historial de compras (RevenueCat)</td></tr>
+      <tr><td>Mejorar la App (análisis de uso)</td><td>Eventos de uso anonimizados (PostHog)</td></tr>
+      <tr><td>Exportar tus datos en Excel</td><td>Transacciones (solo en tu dispositivo)</td></tr>
+      <tr><td>Mostrar widgets en la pantalla de inicio</td><td>Datos del último resumen financiero (solo locales)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Terceros con acceso a tu información</h2>
+
+  <h2>3.1 Supabase</h2>
+  <p>
+    Usamos <strong>Supabase</strong> como backend. Tus transacciones y datos de cuenta se almacenan en servidores de Supabase
+    (alojados en AWS). Supabase aplica cifrado en tránsito (TLS) y en reposo.
+    <br>Política de privacidad: <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>
+  </p>
+
+  <h2>3.2 Anthropic (Claude API)</h2>
+  <p>
+    Las funciones de IA (análisis de fotos y procesamiento de voz) envían datos a la API de Anthropic.
+    Las imágenes y el texto transcrito se transmiten de forma puntual para obtener una respuesta y <strong>no son almacenados</strong>
+    por nosotros. Anthropic puede procesar estos datos conforme a su propia política.
+    <br>Política de privacidad: <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>
+  </p>
+
+  <h2>3.3 RevenueCat</h2>
+  <p>
+    Gestionamos las suscripciones e in-app purchases a través de <strong>RevenueCat</strong>, que recibe tu ID de usuario
+    anónimo y el historial de compras para verificar el estado de suscripción.
+    <br>Política de privacidad: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>
+  </p>
+
+  <h2>3.4 PostHog</h2>
+  <p>
+    Usamos <strong>PostHog</strong> para analítica de producto. Los eventos se envían con un ID anónimo y no
+    contienen información financiera ni datos personales identificables.
+    <br>Política de privacidad: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a>
+  </p>
+
+  <h2>3.5 Google y Apple (autenticación)</h2>
+  <p>
+    Si inicias sesión con Google o Apple, sus SDKs de autenticación procesan tus credenciales conforme a sus
+    propias políticas de privacidad.
+    <br>Google: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+    <br>Apple: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a>
+  </p>
+
+  <h2>4. Permisos del dispositivo</h2>
+  <table>
+    <thead>
+      <tr><th>Permiso</th><th>Motivo</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Micrófono</td><td>Grabar voz para registrar transacciones por dictado (función PRO)</td></tr>
+      <tr><td>Cámara / Galería de fotos</td><td>Capturar o seleccionar fotos de tickets para extracción automática de datos</td></tr>
+      <tr><td>Almacenamiento</td><td>Exportar el archivo Excel generado a tu dispositivo</td></tr>
+    </tbody>
+  </table>
+  <p>Cada permiso se solicita solo cuando accedes a la funcionalidad que lo requiere y puede revocarse desde los ajustes del sistema operativo.</p>
+
+  <h2>5. Almacenamiento local</h2>
+  <p>
+    La App guarda en tu dispositivo: preferencias de configuración (tema, moneda, idioma), caché del estado de suscripción
+    (máximo 24 horas) y datos de sesión cifrados mediante <code>flutter_secure_storage</code>.
+    Estos datos permanecen en tu dispositivo y no se comparten con terceros.
+  </p>
+
+  <h2>6. Retención y eliminación de datos</h2>
+  <ul>
+    <li>Tus datos se conservan mientras mantengas una cuenta activa.</li>
+    <li>Puedes eliminar tu cuenta en cualquier momento desde <strong>Ajustes → Eliminar cuenta</strong>. Todos tus datos se borrarán de los servidores en un plazo máximo de 30 días.</li>
+    <li>Los datos locales se eliminan al desinstalar la App.</li>
+  </ul>
+
+  <h2>7. Seguridad</h2>
+  <p>
+    Toda la comunicación entre la App y los servidores utiliza HTTPS/TLS. Las credenciales de sesión se almacenan
+    cifradas en el almacenamiento seguro del dispositivo. Sin embargo, ningún sistema es 100% seguro; te recomendamos
+    usar una contraseña robusta y mantener el sistema operativo actualizado.
+  </p>
+
+  <h2>8. Menores de edad</h2>
+  <p>
+    La App no está dirigida a menores de 13 años (o la edad mínima aplicable en tu país). No recopilamos
+    conscientemente datos de menores. Si crees que un menor ha creado una cuenta, contáctanos para eliminarla.
+  </p>
+
+  <h2>9. Tus derechos</h2>
+  <p>Dependiendo de tu jurisdicción, puedes tener derecho a:</p>
+  <ul>
+    <li>Acceder a los datos personales que tenemos sobre ti.</li>
+    <li>Rectificar datos incorrectos.</li>
+    <li>Eliminar tu cuenta y todos los datos asociados.</li>
+    <li>Exportar tus datos en formato legible por máquina.</li>
+    <li>Oponerte al tratamiento de datos para análisis de uso (contacta con nosotros para desactivar PostHog).</li>
+  </ul>
+  <p>Para ejercer cualquiera de estos derechos, escríbenos a la dirección indicada en la sección 11.</p>
+
+  <h2>10. Cambios en esta política</h2>
+  <p>
+    Podemos actualizar esta política ocasionalmente. Te notificaremos dentro de la App o por correo electrónico
+    ante cambios materiales. La fecha de "última actualización" al principio del documento reflejará siempre la versión vigente.
+  </p>
+
+  <h2>11. Contacto</h2>
+  <p>
+    Si tienes preguntas o solicitudes sobre privacidad, puedes contactarnos en:<br>
+    <strong>Email:</strong> <a href="mailto:gpmarco98@gmail.com">gpmarco98@gmail.com</a>
+  </p>
+</div>
+
+<!-- ===== ENGLISH ===== -->
+<div id="en">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: April 6, 2026</p>
+
+  <p>
+    This Privacy Policy describes how <strong>ExpenseManager</strong> ("the App", "we") collects, uses, and
+    protects your personal information when you use our personal finance management mobile application.
+    By using the App you agree to the practices described in this document.
+  </p>
+
+  <h2>1. Information We Collect</h2>
+
+  <h2>1.1 Information You Provide</h2>
+  <ul>
+    <li><strong>Account:</strong> email address and password (or Google / Apple OAuth credentials).</li>
+    <li><strong>Financial transactions:</strong> amounts, categories, dates, notes, and attachments for expenses and income you enter manually.</li>
+    <li><strong>Custom categories:</strong> names and icons you create to organize your transactions.</li>
+    <li><strong>Receipt/invoice photos:</strong> images you voluntarily upload so the AI can extract expense data.</li>
+    <li><strong>Voice recordings:</strong> audio you voluntarily record to log transactions by voice.</li>
+  </ul>
+
+  <h2>1.2 Automatically Collected Information</h2>
+  <ul>
+    <li><strong>Usage data:</strong> screens visited, actions taken, errors, and interaction events, collected anonymously via PostHog.</li>
+    <li><strong>Device information:</strong> model, operating system, and App version, used for technical diagnostics.</li>
+    <li><strong>Subscription status:</strong> information about your plan (free/PRO) and purchases, managed by RevenueCat.</li>
+  </ul>
+
+  <h2>2. How We Use Your Information</h2>
+  <table>
+    <thead>
+      <tr><th>Purpose</th><th>Data used</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Authenticate you and maintain your session</td><td>Email, password / OAuth token</td></tr>
+      <tr><td>Store and sync your transactions in the cloud</td><td>Transactions, categories</td></tr>
+      <tr><td>Process automatic recurring transactions</td><td>Recurrence configuration</td></tr>
+      <tr><td>Analyze receipts/invoices with AI (Claude)</td><td>Photo images (sent to API, not stored)</td></tr>
+      <tr><td>Transcribe and process voice commands with AI (Claude)</td><td>Voice audio (processed locally; resulting text sent to API)</td></tr>
+      <tr><td>Manage subscriptions and in-app purchases</td><td>User ID, purchase history (RevenueCat)</td></tr>
+      <tr><td>Improve the App (usage analytics)</td><td>Anonymized usage events (PostHog)</td></tr>
+      <tr><td>Export your data to Excel</td><td>Transactions (on-device only)</td></tr>
+      <tr><td>Display home screen widgets</td><td>Latest financial summary (local only)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Third Parties with Access to Your Information</h2>
+
+  <h2>3.1 Supabase</h2>
+  <p>
+    We use <strong>Supabase</strong> as our backend. Your transactions and account data are stored on Supabase
+    servers (hosted on AWS). Supabase applies encryption in transit (TLS) and at rest.
+    <br>Privacy policy: <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>
+  </p>
+
+  <h2>3.2 Anthropic (Claude API)</h2>
+  <p>
+    AI features (photo analysis and voice processing) send data to the Anthropic API. Images and transcribed
+    text are transmitted on demand to obtain a response and are <strong>not stored</strong> by us. Anthropic may
+    process this data according to their own policy.
+    <br>Privacy policy: <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>
+  </p>
+
+  <h2>3.3 RevenueCat</h2>
+  <p>
+    We manage subscriptions and in-app purchases via <strong>RevenueCat</strong>, which receives your anonymous
+    user ID and purchase history to verify subscription status.
+    <br>Privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>
+  </p>
+
+  <h2>3.4 PostHog</h2>
+  <p>
+    We use <strong>PostHog</strong> for product analytics. Events are sent with an anonymous ID and do not
+    contain financial information or personally identifiable data.
+    <br>Privacy policy: <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a>
+  </p>
+
+  <h2>3.5 Google and Apple (authentication)</h2>
+  <p>
+    If you sign in with Google or Apple, their authentication SDKs process your credentials in accordance with
+    their own privacy policies.
+    <br>Google: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+    <br>Apple: <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a>
+  </p>
+
+  <h2>4. Device Permissions</h2>
+  <table>
+    <thead>
+      <tr><th>Permission</th><th>Reason</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Microphone</td><td>Record voice to log transactions by dictation (PRO feature)</td></tr>
+      <tr><td>Camera / Photo library</td><td>Capture or select receipt photos for automatic data extraction</td></tr>
+      <tr><td>Storage</td><td>Export the generated Excel file to your device</td></tr>
+    </tbody>
+  </table>
+  <p>Each permission is requested only when you access the feature that requires it and can be revoked from your OS settings.</p>
+
+  <h2>5. Local Storage</h2>
+  <p>
+    The App stores on your device: configuration preferences (theme, currency, language), subscription status
+    cache (maximum 24 hours), and session data encrypted via <code>flutter_secure_storage</code>. This data
+    remains on your device and is not shared with third parties.
+  </p>
+
+  <h2>6. Data Retention and Deletion</h2>
+  <ul>
+    <li>Your data is retained while you maintain an active account.</li>
+    <li>You may delete your account at any time via <strong>Settings → Delete account</strong>. All your data will be erased from our servers within 30 days.</li>
+    <li>Local data is deleted when you uninstall the App.</li>
+  </ul>
+
+  <h2>7. Security</h2>
+  <p>
+    All communication between the App and our servers uses HTTPS/TLS. Session credentials are stored encrypted
+    in the device's secure storage. No system is 100% secure; we recommend using a strong password and keeping
+    your OS up to date.
+  </p>
+
+  <h2>8. Children</h2>
+  <p>
+    The App is not directed at children under 13 (or the minimum age applicable in your country). We do not
+    knowingly collect data from minors. If you believe a minor has created an account, contact us to have it removed.
+  </p>
+
+  <h2>9. Your Rights</h2>
+  <p>Depending on your jurisdiction, you may have the right to:</p>
+  <ul>
+    <li>Access the personal data we hold about you.</li>
+    <li>Rectify inaccurate data.</li>
+    <li>Delete your account and all associated data.</li>
+    <li>Export your data in a machine-readable format.</li>
+    <li>Object to the processing of your data for usage analytics (contact us to disable PostHog).</li>
+  </ul>
+  <p>To exercise any of these rights, write to us at the address in section 11.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>
+    We may update this policy from time to time. We will notify you within the App or by email of material
+    changes. The "last updated" date at the top of this document will always reflect the current version.
+  </p>
+
+  <h2>11. Contact</h2>
+  <p>
+    If you have privacy questions or requests, you can reach us at:<br>
+    <strong>Email:</strong> <a href="mailto:gpmarco98@gmail.com">gpmarco98@gmail.com</a>
+  </p>
+</div>
+
+<script>
+  function showLang(lang, btn) {
+    document.getElementById('es').style.display = lang === 'es' ? 'block' : 'none';
+    document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+    document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
