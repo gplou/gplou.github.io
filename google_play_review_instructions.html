@@ -356,8 +356,8 @@ a note — we will resolve it immediately and resubmit.
 
 <script>
   function showLang(lang, btn) {
-    document.getElementById('es').style.display = lang === 'es' ? '' : 'none';
-    document.getElementById('en').style.display = lang === 'en' ? '' : 'none';
+    document.getElementById('es').style.display = lang === 'es' ? 'block' : 'none';
+    document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
     document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
   }
