@@ -8,197 +8,194 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 15px;
-      line-height: 1.7;
-      color: #1a1a1a;
-      background: #f8f9fa;
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
+      font-size: 15px; line-height: 1.7; color: #1a1a1a;
+      background: #f8f9fa; max-width: 860px;
+      margin: 0 auto; padding: 48px 24px 80px;
     }
     h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
     h2 { font-size: 1.1rem; font-weight: 700; margin: 32px 0 10px; color: #111;
          border-left: 4px solid #1a73e8; padding-left: 10px; }
     h3 { font-size: 0.95rem; font-weight: 600; margin: 18px 0 6px; color: #333; }
     p  { margin-bottom: 10px; }
-    ul, ol { margin: 8px 0 12px 22px; }
+    ul { margin: 8px 0 12px 22px; }
     li { margin-bottom: 5px; }
     .meta { color: #666; font-size: 0.85rem; margin-bottom: 36px; }
-    .badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px;
+             font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
     .badge-req  { background: #fde8e8; color: #b91c1c; }
     .badge-info { background: #e0f0ff; color: #1a56db; }
-    .badge-ok   { background: #def7ec; color: #046c4e; }
-
-    .card {
-      background: #fff;
-      border: 1px solid #e0e0e0;
-      border-radius: 10px;
-      padding: 20px 24px;
-      margin: 16px 0;
-    }
-    .credentials {
-      background: #f0f4ff;
-      border: 1px solid #c7d7ff;
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin: 12px 0;
-      font-family: monospace;
-      font-size: 0.95rem;
-    }
+    .card { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px 24px; margin: 16px 0; }
+    .credentials { background: #f0f4ff; border: 1px solid #c7d7ff; border-radius: 8px;
+                   padding: 16px 20px; margin: 12px 0; font-family: monospace; font-size: 0.95rem; }
     .credentials span { color: #888; font-style: italic; }
-
-    .warning {
-      background: #fffbeb;
-      border: 1px solid #fcd34d;
-      border-radius: 8px;
-      padding: 12px 16px;
-      margin: 12px 0;
-      font-size: 0.9rem;
-    }
-    .step {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      margin-bottom: 10px;
-    }
-    .step-num {
-      min-width: 26px;
-      height: 26px;
-      background: #1a73e8;
-      color: #fff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8rem;
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 12px 0 16px;
-      font-size: 0.9rem;
-    }
+    .warning { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px;
+               padding: 12px 16px; margin: 12px 0; font-size: 0.9rem; }
+    .step { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 10px; }
+    .step-num { min-width: 26px; height: 26px; background: #1a73e8; color: #fff; border-radius: 50%;
+                display: flex; align-items: center; justify-content: center;
+                font-size: 0.8rem; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 0.9rem; }
     th, td { border: 1px solid #ddd; padding: 9px 13px; text-align: left; vertical-align: top; }
     th { background: #f5f5f5; font-weight: 600; }
     .section-divider { border: none; border-top: 2px solid #e8e8e8; margin: 40px 0; }
-
-    /* --- PLAIN-TEXT EXPORT BLOCK --- */
-    .plain-text-block {
-      background: #1e1e2e;
-      color: #cdd6f4;
-      border-radius: 10px;
-      padding: 20px 24px;
-      margin: 16px 0;
-      font-family: monospace;
-      font-size: 0.88rem;
-      white-space: pre-wrap;
-      line-height: 1.6;
-    }
-    .lang-toggle { display:flex; gap:8px; margin-bottom:32px; }
-    .lang-toggle button {
-      padding: 6px 16px; border: 1px solid #ccc; border-radius: 6px;
-      background: #fff; cursor: pointer; font-size: 0.9rem;
-    }
-    .lang-toggle button.active { background:#1a1a1a; color:#fff; border-color:#1a1a1a; }
-    #en { display: none; }
+    .plain-text-block { background: #1e1e2e; color: #cdd6f4; border-radius: 10px;
+                        padding: 20px 24px; margin: 16px 0; font-family: monospace;
+                        font-size: 0.88rem; white-space: pre-wrap; line-height: 1.6; }
+    .lang-toggle { display: flex; gap: 8px; margin-bottom: 32px; }
+    .lang-toggle button { padding: 6px 16px; border: 1px solid #ccc; border-radius: 6px;
+                          background: #fff; cursor: pointer; font-size: 0.9rem; }
+    .lang-toggle button.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
   </style>
 </head>
 <body>
 
-<div class="lang-toggle">
-  <button class="active" onclick="showLang('es',this)">Español</button>
-  <button onclick="showLang('en',this)">English</button>
-</div>
+<script>
+  /* ============================================================
+     EDITA SOLO ESTA SECCIÓN — Edit only this section
+     ============================================================ */
+  const ACCOUNT = {
+    email:    "test@expensemanager.app",   // ← cambia aquí el email
+    password: "TestPass123!",              // ← cambia aquí la contraseña
+    proActive: true,                       // ← true = Pro activado manualmente
+  };
+  /* ============================================================ */
 
-<!-- ===================== ESPAÑOL ===================== -->
-<div id="es">
+  const T = {
+    es: {
+      title:      "Instrucciones de revisión para Google Play",
+      meta:       "Última actualización: 6 de abril de 2026",
+      badge:      "Acceso restringido",
 
-<h1>Instrucciones de revisión para Google Play</h1>
-<p class="meta">
-  App: <strong>ExpenseManager</strong> &nbsp;·&nbsp;
-  Última actualización: 6 de abril de 2026 &nbsp;·&nbsp;
-  <span class="badge badge-req">Acceso restringido</span>
-</p>
+      checkTitle: "Checklist: lo que debes preparar antes de enviar",
+      checkIntro: "Antes de rellenar el formulario en Google Play Console, asegúrate de tener listo lo siguiente:",
+      col1: "Elemento", col2: "Descripción", col3: "Estado",
+      rows: [
+        ["Cuenta de prueba (email/contraseña)",
+         "Una cuenta real registrada en Supabase con datos de ejemplo ya cargados (transacciones, categorías personalizadas, etc.).",
+         "req", "Obligatorio"],
+        ["Plan Pro activo en la cuenta de prueba",
+         "Activa manualmente el plan Pro desde Supabase o RevenueCat para que los revisores accedan a todas las funciones premium sin usar prueba gratuita.",
+         "req", "Obligatorio"],
+        ["Sin 2FA / verificación en dos pasos",
+         "Desactiva cualquier verificación de dos pasos en la cuenta de prueba para que los revisores puedan acceder sin pasos adicionales.",
+         "req", "Obligatorio"],
+        ["Datos de ejemplo cargados",
+         "Al menos 10–15 transacciones con distintas categorías para que los revisores puedan ver gráficas, resúmenes y el chat IA funcionando.",
+         "info", "Recomendado"],
+        ["Credenciales anotadas en el formulario",
+         "El email y contraseña de la cuenta de prueba deben estar en el campo \"Access instructions\" de Google Play Console.",
+         "req", "Obligatorio"],
+        ["Login con Google / Apple",
+         "Los revisores no pueden usar sus propias cuentas. Proporciona el flujo de email/contraseña como método principal.",
+         "info", "Informativo"],
+      ],
+      warning: "<strong>Importante:</strong> Los revisores de Google Play <strong>no pueden</strong> crear cuentas propias, usar pruebas gratuitas ni contactar al desarrollador para pedir acceso. Todo el acceso debe estar habilitado desde el principio con las credenciales que proporcionas.",
 
-<!-- ─── CHECKLIST DEL DESARROLLADOR ─── -->
-<h2>Checklist: lo que debes preparar antes de enviar</h2>
-<p>Antes de rellenar el formulario en Google Play Console, asegúrate de tener listo lo siguiente:</p>
+      copyTitle: "Instrucciones para el revisor (texto para Google Play Console)",
+      copyIntro: 'Copia y pega el siguiente texto en el campo <em>"Instructions for testers"</em> / <em>"Access instructions"</em> de Google Play Console.',
 
-<div class="card">
-  <table>
-    <thead>
-      <tr>
-        <th>Elemento</th>
-        <th>Descripción</th>
-        <th>Estado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Cuenta de prueba (email/contraseña)</strong></td>
-        <td>Una cuenta real registrada en Supabase con datos de ejemplo ya cargados (transacciones, categorías personalizadas, etc.).</td>
-        <td><span class="badge badge-req">Obligatorio</span></td>
-      </tr>
-      <tr>
-        <td><strong>Plan Pro activo en la cuenta de prueba</strong></td>
-        <td>Activa manualmente el plan Pro para esa cuenta desde Supabase (o RevenueCat) para que los revisores accedan a todas las funciones premium sin usar prueba gratuita.</td>
-        <td><span class="badge badge-req">Obligatorio</span></td>
-      </tr>
-      <tr>
-        <td><strong>Sin 2FA / verificación en dos pasos</strong></td>
-        <td>Desactiva cualquier verificación de dos pasos en la cuenta de prueba para que los revisores puedan acceder sin pasos adicionales.</td>
-        <td><span class="badge badge-req">Obligatorio</span></td>
-      </tr>
-      <tr>
-        <td><strong>Datos de ejemplo cargados</strong></td>
-        <td>Al menos 10–15 transacciones con distintas categorías para que los revisores puedan ver gráficas, resúmenes y el chat IA funcionando.</td>
-        <td><span class="badge badge-info">Recomendado</span></td>
-      </tr>
-      <tr>
-        <td><strong>Credenciales anotadas en el formulario</strong></td>
-        <td>El email y contraseña de la cuenta de prueba deben estar en el campo "Access instructions" de Google Play Console.</td>
-        <td><span class="badge badge-req">Obligatorio</span></td>
-      </tr>
-      <tr>
-        <td><strong>Login con Google / Apple</strong></td>
-        <td>Los revisores <em>no pueden</em> usar sus propias cuentas. Proporciona el flujo de email/contraseña como método principal. No es necesario que Google/Apple Sign-In funcione con la cuenta de prueba.</td>
-        <td><span class="badge badge-info">Informativo</span></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+      stepsTitle: "Guía visual: flujo de acceso paso a paso",
+      loginTitle: "1. Acceso a la app (login)",
+      loginSteps: [
+        "Abrir la app. Se muestra la pantalla de <strong>Login</strong> automáticamente.",
+        "Introducir el email y contraseña de la cuenta de prueba. <strong>No usar Google ni Apple Sign-In.</strong>",
+        'Pulsar <strong>"Iniciar sesión"</strong>. Se accede directamente al Dashboard.',
+      ],
+      proTitle: "2. Acceso a funciones Pro (suscripción)",
+      proSteps: [
+        "La cuenta de prueba tiene el <strong>plan Pro activado manualmente</strong> en el backend (Supabase). No se requiere ninguna compra ni prueba gratuita.",
+        'Para confirmar: pulsar el icono de menú arriba a la derecha → pantalla <strong>"Plan Pro"</strong> → estado "Activo".',
+        "Todas las funciones premium estarán disponibles de inmediato: chat IA, exportación Excel, transacciones recurrentes, categorías personalizadas.",
+      ],
+      navTitle: "3. Navegación principal",
+      navItems: [
+        "<strong>Dashboard</strong> — pantalla principal con resumen de gastos e ingresos.",
+        "<strong>Transacciones</strong> — listado completo. Botón \"+\" para añadir.",
+        "<strong>Gráficas</strong> — gráficas por categoría y por periodo.",
+        "<strong>Chat IA</strong> — consultas en lenguaje natural sobre tus gastos (Pro).",
+        "<strong>Ajustes</strong> — idioma (ES/EN), moneda, tema claro/oscuro.",
+      ],
 
-<div class="warning">
-  <strong>Importante:</strong> Los revisores de Google Play <strong>no pueden</strong> crear cuentas propias, usar pruebas gratuitas ni contactar al desarrollador para pedir acceso. Todo el acceso debe estar habilitado desde el principio con las credenciales que proporcionas.
-</div>
+      credTitle: "Credenciales de la cuenta de prueba",
+      credEmail: "Email",
+      credPass:  "Contraseña",
+      credPro:   "Plan Pro",
+      credProVal: "Activado manualmente en el backend",
+    },
 
-<hr class="section-divider" />
+    en: {
+      title:      "Google Play Review Instructions",
+      meta:       "Last updated: April 6, 2026",
+      badge:      "Restricted access",
 
-<!-- ─── INSTRUCCIONES PARA EL REVISOR ─── -->
-<h2>Instrucciones para el revisor (texto para Google Play Console)</h2>
-<p>Copia y pega el siguiente texto en el campo <em>"Instructions for testers"</em> / <em>"Access instructions"</em> de Google Play Console. Rellena los datos entre <code>[ ]</code> antes de enviarlo.</p>
+      checkTitle: "Developer checklist: what to prepare before submitting",
+      checkIntro: "Before filling in the form in Google Play Console, make sure you have the following ready:",
+      col1: "Item", col2: "Description", col3: "Status",
+      rows: [
+        ["Test account (email/password)",
+         "A real Supabase account with sample data already loaded (transactions, custom categories, etc.).",
+         "req", "Required"],
+        ["Pro plan active on test account",
+         "Manually activate the Pro plan via Supabase or RevenueCat so reviewers can access all premium features without a free trial.",
+         "req", "Required"],
+        ["No 2FA on test account",
+         "Disable two-step verification so reviewers can log in without extra steps.",
+         "req", "Required"],
+        ["Sample data loaded",
+         "At least 10–15 transactions across different categories so reviewers can see charts, summaries and AI chat working.",
+         "info", "Recommended"],
+        ["Credentials in Console",
+         'Email and password must be entered in the "Access instructions" field in Google Play Console.',
+         "req", "Required"],
+        ["Google / Apple Sign-In",
+         "Reviewers cannot use their own accounts. Provide email/password as the primary method.",
+         "info", "Informational"],
+      ],
+      warning: "<strong>Important:</strong> Google Play reviewers <strong>cannot</strong> create their own accounts, use free trials, or contact the developer for access. All access must be pre-enabled from the start.",
 
-<div class="plain-text-block">
-=== ExpenseManager — Test Account Access Instructions ===
+      copyTitle: "Instructions for the reviewer (text for Google Play Console)",
+      copyIntro: 'Copy and paste the following text into the <em>"Instructions for testers"</em> / <em>"Access instructions"</em> field in Google Play Console.',
+
+      stepsTitle: "Step-by-step access guide",
+      loginTitle: "1. Accessing the app (login)",
+      loginSteps: [
+        "Open the app. The <strong>Login</strong> screen appears automatically.",
+        "Enter the test account email and password. <strong>Do not use Google or Apple Sign-In.</strong>",
+        'Tap <strong>"Iniciar sesión"</strong> (Log in). You will land directly on the Dashboard.',
+      ],
+      proTitle: "2. Accessing Pro features (subscription)",
+      proSteps: [
+        "The test account has the <strong>Pro plan manually activated</strong> on the backend (Supabase). No purchase or free trial is required.",
+        'To confirm: tap the top-right menu icon → <strong>"Plan Pro"</strong> screen → status should show "Active".',
+        "All premium features are immediately available: AI chat, Excel export, recurring transactions, custom categories.",
+      ],
+      navTitle: "3. Main navigation",
+      navItems: [
+        "<strong>Dashboard</strong> — main screen with income/expense summary.",
+        "<strong>Transactions</strong> — full list. Tap \"+\" to add.",
+        "<strong>Charts</strong> — bar and pie charts by category and period.",
+        "<strong>AI Chat</strong> — natural language expense queries (Pro).",
+        "<strong>Settings</strong> — language (ES/EN), currency, light/dark theme.",
+      ],
+
+      credTitle: "Test account credentials",
+      credEmail: "Email",
+      credPass:  "Password",
+      credPro:   "Pro Plan",
+      credProVal: "Manually activated on the backend",
+    },
+  };
+
+  function plainTextBlock(email, password) {
+    return `=== ExpenseManager — Test Account Access Instructions ===
 
 This app requires a registered account to access its features.
 Please use the pre-configured test account below. Do NOT create a new account
 or use Google/Apple Sign-In — use the email + password login only.
 
 --- LOGIN CREDENTIALS ---
-Email:    [TEST_EMAIL@example.com]
-Password: [TEST_PASSWORD]
+Email:    ${email}
+Password: ${password}
 
 --- HOW TO LOG IN ---
 1. Open the app. The Login screen appears automatically.
@@ -233,134 +230,87 @@ It should show the plan as active.
 • The app is available in Spanish and English (change in Settings → Language).
 
 If you experience any access issues, please reject the build and leave
-a note — we will resolve it immediately and resubmit.
-</div>
+a note — we will resolve it immediately and resubmit.`;
+  }
 
-<hr class="section-divider" />
+  function render(lang) {
+    const t = T[lang];
+    const a = ACCOUNT;
+    let html = `
+      <h1>${t.title}</h1>
+      <p class="meta">App: <strong>ExpenseManager</strong> &nbsp;·&nbsp; ${t.meta} &nbsp;·&nbsp;
+        <span class="badge badge-req">${t.badge}</span></p>
 
-<!-- ─── GUÍA RÁPIDA VISUAL ─── -->
-<h2>Guía visual: flujo de acceso paso a paso</h2>
+      <h2>${t.checkTitle}</h2>
+      <p>${t.checkIntro}</p>
+      <div class="card">
+        <table>
+          <thead><tr><th>${t.col1}</th><th>${t.col2}</th><th>${t.col3}</th></tr></thead>
+          <tbody>
+            ${t.rows.map(([name, desc, type, label]) => `
+              <tr>
+                <td><strong>${name}</strong></td>
+                <td>${desc}</td>
+                <td><span class="badge badge-${type}">${label}</span></td>
+              </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+      <div class="warning">${t.warning}</div>
 
-<div class="card">
-  <h3>1. Acceso a la app (login)</h3>
-  <div class="step"><div class="step-num">1</div><div>Abrir la app. Se muestra la pantalla de <strong>Login</strong> automáticamente.</div></div>
-  <div class="step"><div class="step-num">2</div><div>Introducir el email y contraseña de la cuenta de prueba. <strong>No usar Google ni Apple Sign-In.</strong></div></div>
-  <div class="step"><div class="step-num">3</div><div>Pulsar <strong>"Iniciar sesión"</strong>. Se accede directamente al Dashboard.</div></div>
-</div>
+      <hr class="section-divider"/>
 
-<div class="card">
-  <h3>2. Acceso a funciones Pro (suscripción)</h3>
-  <div class="step"><div class="step-num">1</div><div>La cuenta de prueba tiene el <strong>plan Pro activado manualmente</strong> en el backend (Supabase). No se requiere ninguna compra ni prueba gratuita.</div></div>
-  <div class="step"><div class="step-num">2</div><div>Para confirmar: pulsar el icono de menú arriba a la derecha → pantalla <strong>"Plan Pro"</strong> → estado "Activo".</div></div>
-  <div class="step"><div class="step-num">3</div><div>Todas las funciones premium estarán disponibles de inmediato: chat IA, exportación Excel, transacciones recurrentes, categorías personalizadas.</div></div>
-</div>
+      <h2>${t.copyTitle}</h2>
+      <p>${t.copyIntro}</p>
+      <div class="plain-text-block">${escHtml(plainTextBlock(a.email, a.password))}</div>
 
-<div class="card">
-  <h3>3. Navegación principal</h3>
-  <ul>
-    <li><strong>Dashboard</strong> — pantalla principal con resumen de gastos e ingresos.</li>
-    <li><strong>Transacciones</strong> — listado completo. Botón "+" para añadir.</li>
-    <li><strong>Gráficas</strong> — gráficas por categoría y por periodo.</li>
-    <li><strong>Chat IA</strong> — consultas en lenguaje natural sobre tus gastos.</li>
-    <li><strong>Ajustes</strong> — idioma (ES/EN), moneda, tema claro/oscuro.</li>
-  </ul>
-</div>
+      <hr class="section-divider"/>
 
-<hr class="section-divider" />
+      <h2>${t.stepsTitle}</h2>
+      <div class="card">
+        <h3>${t.loginTitle}</h3>
+        ${t.loginSteps.map((s,i) => `<div class="step"><div class="step-num">${i+1}</div><div>${s}</div></div>`).join('')}
+      </div>
+      <div class="card">
+        <h3>${t.proTitle}</h3>
+        ${t.proSteps.map((s,i) => `<div class="step"><div class="step-num">${i+1}</div><div>${s}</div></div>`).join('')}
+      </div>
+      <div class="card">
+        <h3>${t.navTitle}</h3>
+        <ul>${t.navItems.map(s => `<li>${s}</li>`).join('')}</ul>
+      </div>
 
-<!-- ─── DATOS DE LA CUENTA ─── -->
-<h2>Credenciales de la cuenta de prueba</h2>
-<p>Rellena estos datos antes de enviar a Google Play:</p>
+      <hr class="section-divider"/>
 
-<div class="credentials">
-  Email:      <span>[Introduce aquí el email de la cuenta de prueba]</span><br/>
-  Contraseña: <span>[Introduce aquí la contraseña de la cuenta de prueba]</span><br/>
-  Plan Pro:   <span>[Activa manualmente desde Supabase o RevenueCat]</span>
-</div>
+      <h2>${t.credTitle}</h2>
+      <div class="credentials">
+        ${t.credEmail}: &nbsp;<strong>${escHtml(a.email)}</strong><br/>
+        ${t.credPass}:  &nbsp;<strong>${escHtml(a.password)}</strong><br/>
+        ${t.credPro}:   &nbsp;<strong>${t.credProVal}</strong>
+      </div>`;
 
-</div><!-- /es -->
+    document.getElementById('content').innerHTML = html;
+  }
 
+  function escHtml(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
 
-<!-- ===================== ENGLISH ===================== -->
-<div id="en">
-
-<h1>Google Play Review Instructions</h1>
-<p class="meta">
-  App: <strong>ExpenseManager</strong> &nbsp;·&nbsp;
-  Last updated: April 6, 2026 &nbsp;·&nbsp;
-  <span class="badge badge-req">Restricted access</span>
-</p>
-
-<h2>Developer Checklist: what to prepare before submitting</h2>
-
-<div class="card">
-  <table>
-    <thead>
-      <tr><th>Item</th><th>Description</th><th>Status</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Test account (email/password)</strong></td>
-        <td>A real Supabase account with sample data already loaded (transactions, custom categories, etc.).</td>
-        <td><span class="badge badge-req">Required</span></td>
-      </tr>
-      <tr>
-        <td><strong>Pro plan active on test account</strong></td>
-        <td>Manually activate the Pro plan for that account via Supabase or RevenueCat so reviewers can access all premium features without a free trial.</td>
-        <td><span class="badge badge-req">Required</span></td>
-      </tr>
-      <tr>
-        <td><strong>No 2FA on test account</strong></td>
-        <td>Disable two-step verification so reviewers can log in without extra steps.</td>
-        <td><span class="badge badge-req">Required</span></td>
-      </tr>
-      <tr>
-        <td><strong>Sample data loaded</strong></td>
-        <td>At least 10–15 transactions across different categories so reviewers can see charts, summaries and AI chat working.</td>
-        <td><span class="badge badge-info">Recommended</span></td>
-      </tr>
-      <tr>
-        <td><strong>Credentials in Console</strong></td>
-        <td>Email and password must be entered in the "Access instructions" field in Google Play Console.</td>
-        <td><span class="badge badge-req">Required</span></td>
-      </tr>
-      <tr>
-        <td><strong>Google / Apple Sign-In</strong></td>
-        <td>Reviewers cannot use their own accounts. Provide email/password as the primary method. Google/Apple Sign-In does not need to work with the test account.</td>
-        <td><span class="badge badge-info">Informational</span></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<div class="warning">
-  <strong>Important:</strong> Google Play reviewers <strong>cannot</strong> create their own accounts, use free trials, or contact the developer for access. All access must be pre-enabled from the start.
-</div>
-
-<hr class="section-divider" />
-
-<h2>Instructions for the reviewer (text for Google Play Console)</h2>
-<p>Copy and paste the text block above (it is already in English) into the <em>"Instructions for testers"</em> / <em>"Access instructions"</em> field in Google Play Console. Fill in the <code>[ ]</code> placeholders before submitting.</p>
-
-<hr class="section-divider" />
-
-<h2>Test account credentials</h2>
-
-<div class="credentials">
-  Email:    <span>[Enter test account email here]</span><br/>
-  Password: <span>[Enter test account password here]</span><br/>
-  Pro Plan: <span>[Activate manually via Supabase or RevenueCat]</span>
-</div>
-
-</div><!-- /en -->
-
-<script>
   function showLang(lang, btn) {
-    document.getElementById('es').style.display = lang === 'es' ? 'block' : 'none';
-    document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
     document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+    render(lang);
   }
+
+  document.addEventListener('DOMContentLoaded', () => render('es'));
 </script>
+
+<div class="lang-toggle">
+  <button class="active" onclick="showLang('es', this)">Español</button>
+  <button onclick="showLang('en', this)">English</button>
+</div>
+
+<div id="content"></div>
+
 </body>
 </html>
