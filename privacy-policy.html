@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Expense Manager</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #d2d2d7;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header h1 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1d1d1f;
+    }
+
+    header span {
+      font-size: 0.9rem;
+      color: #6e6e73;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 48px 52px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .updated {
+      font-size: 0.85rem;
+      color: #6e6e73;
+      margin-bottom: 36px;
+      display: block;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 32px 0 10px;
+      color: #1d1d1f;
+    }
+
+    p { margin-bottom: 14px; }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    a { color: #0071e3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .section-divider {
+      border: none;
+      border-top: 1px solid #e5e5ea;
+      margin: 28px 0 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #f0f6ff;
+      color: #0071e3;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 2px 9px;
+      border-radius: 20px;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #6e6e73;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 28px 22px; }
+      h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Expense Manager</h1>
+    <span>by GPM</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>Privacy Policy</h2>
+    <span class="updated">Last updated: April 20, 2026</span>
+
+    <p>
+      GPM ("we", "us", or "our") operates the <strong>Expense Manager</strong> mobile application
+      (the "App"). This Privacy Policy explains how we collect, use, and protect your personal
+      information when you use our App.
+    </p>
+    <p>
+      By using Expense Manager, you agree to the collection and use of information in accordance
+      with this policy.
+    </p>
+
+    <hr class="section-divider" />
+
+    <!-- 1 -->
+    <h3>1. Information We Collect</h3>
+
+    <p><strong>1.1 Account Information</strong></p>
+    <p>When you create an account, we collect:</p>
+    <ul>
+      <li>Your name and email address, provided via Google Sign-In or Apple Sign-In.</li>
+    </ul>
+
+    <p><strong>1.2 Financial Data</strong></p>
+    <p>To provide expense-tracking functionality, we store:</p>
+    <ul>
+      <li>Transactions you create (amounts, descriptions, categories, dates).</li>
+      <li>Custom categories you define.</li>
+      <li>Recurring transaction rules you configure.</li>
+    </ul>
+
+    <p><strong>1.3 Subscription Information</strong></p>
+    <p>
+      If you subscribe to Expense Manager PRO, we store your purchase history and subscription
+      status. Payment details are processed exclusively by Apple (App Store). We never have access
+      to your credit card or payment method information.
+    </p>
+
+    <p><strong>1.4 Media and Voice Data</strong></p>
+    <p>
+      When you use AI-powered transaction entry, we may temporarily process photos of receipts and
+      audio recordings for voice-based entry. This media is sent to our server-side functions for
+      parsing only and is <strong>not stored permanently</strong> — it is discarded after the
+      transaction data has been extracted.
+    </p>
+
+    <p><strong>1.5 Analytics Data</strong></p>
+    <p>
+      We use <strong>PostHog</strong> for product analytics to understand how features are used and
+      to improve the App. Analytics data is pseudonymous and does not include your financial
+      transactions.
+    </p>
+
+    <p><strong>1.6 Local Preferences</strong></p>
+    <p>
+      App preferences (theme, language, display settings) are stored locally on your device and
+      never leave it.
+    </p>
+
+    <hr class="section-divider" />
+
+    <!-- 2 -->
+    <h3>2. How We Use Your Information</h3>
+    <ul>
+      <li>Provide, maintain, and improve the App's core expense-tracking features.</li>
+      <li>Authenticate your identity and secure your account.</li>
+      <li>Process AI-assisted transaction entry (voice and image) via Supabase Edge Functions powered by Claude AI.</li>
+      <li>Power the AI chat assistant for financial insights based on your transaction data.</li>
+      <li>Manage your PRO subscription status.</li>
+      <li>Measure and improve product features via anonymised analytics (PostHog).</li>
+      <li>Show relevant ads in the free tier (Google AdMob).</li>
+    </ul>
+
+    <hr class="section-divider" />
+
+    <!-- 3 -->
+    <h3>3. Data Storage and Security</h3>
+    <p>
+      Your data is stored securely using <strong>Supabase</strong>, a hosted backend platform.
+      Supabase implements industry-standard security measures including:
+    </p>
+    <ul>
+      <li>Encryption in transit (TLS/SSL) and at rest.</li>
+      <li>Row-level security so you can only access your own data.</li>
+      <li>Secure authentication via OAuth providers (Google, Apple).</li>
+    </ul>
+    <p>
+      We take reasonable measures to protect your personal information, but no method of electronic
+      storage or transmission is 100% secure.
+    </p>
+
+    <hr class="section-divider" />
+
+    <!-- 4 -->
+    <h3>4. Third-Party Services</h3>
+    <p>We use the following third-party services, each with its own privacy policy:</p>
+    <ul>
+      <li>
+        <span class="badge">Backend</span>
+        <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a> —
+        database, authentication, and serverless functions.
+      </li>
+      <li>
+        <span class="badge">Auth</span>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Sign-In</a>
+      </li>
+      <li>
+        <span class="badge">Auth</span>
+        <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Sign-In</a>
+      </li>
+      <li>
+        <span class="badge">AI</span>
+        <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Claude AI (Anthropic)</a> —
+        voice/image parsing and chat, accessed via Supabase Edge Functions.
+      </li>
+      <li>
+        <span class="badge">Subscriptions</span>
+        <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a> —
+        in-app purchase management.
+      </li>
+      <li>
+        <span class="badge">Ads</span>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a> —
+        advertising in the free tier.
+      </li>
+      <li>
+        <span class="badge">Analytics</span>
+        <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog</a> —
+        product analytics.
+      </li>
+    </ul>
+
+    <hr class="section-divider" />
+
+    <!-- 5 -->
+    <h3>5. Advertising and App Tracking Transparency (iOS)</h3>
+    <p>
+      The free tier of Expense Manager shows ads via Google AdMob. On iOS, the App may request
+      permission to use the Identifier for Advertisers (IDFA) through Apple's App Tracking
+      Transparency framework. You can grant or deny this permission; denying it does not affect the
+      core functionality of the App.
+    </p>
+    <p>
+      We do <strong>not</strong> track you across other companies' apps or websites for advertising
+      purposes beyond what AdMob requires with your consent.
+    </p>
+
+    <hr class="section-divider" />
+
+    <!-- 6 -->
+    <h3>6. Data Retention</h3>
+    <p>
+      We retain your account and transaction data for as long as your account is active. If you
+      delete your account, we will delete your personal data from our servers within
+      <strong>30 days</strong>, except where retention is required by law.
+    </p>
+
+    <hr class="section-divider" />
+
+    <!-- 7 -->
+    <h3>7. Your Rights</h3>
+    <p>Depending on your jurisdiction, you may have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you.</li>
+      <li>Request correction of inaccurate data.</li>
+      <li>Request deletion of your data ("right to be forgotten").</li>
+      <li>Export your data in a portable format.</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at the address below.</p>
+
+    <hr class="section-divider" />
+
+    <!-- 8 -->
+    <h3>8. Children's Privacy</h3>
+    <p>
+      Expense Manager is not directed at children under the age of 13. We do not knowingly collect
+      personal information from children under 13. If you believe we have collected data from a
+      child, please contact us so we can delete it promptly.
+    </p>
+
+    <hr class="section-divider" />
+
+    <!-- 9 -->
+    <h3>9. International Users</h3>
+    <p>
+      The App is available in Spanish, English, French, and German. Your data may be processed and
+      stored on servers located outside your country of residence. By using the App, you consent to
+      such transfer and processing.
+    </p>
+
+    <hr class="section-divider" />
+
+    <!-- 10 -->
+    <h3>10. Changes to This Policy</h3>
+    <p>
+      We may update this Privacy Policy from time to time. We will notify you of material changes
+      by posting the updated policy within the App and updating the "Last updated" date above.
+    </p>
+
+    <hr class="section-divider" />
+
+    <!-- 11 -->
+    <h3>11. Contact Us</h3>
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+    <p>
+      <strong>GPM</strong><br />
+      Email: <a href="mailto:gpmarco98@gmail.com">gpmarco98@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2026 GPM. All rights reserved.
+  </footer>
+</div>
+
+</body>
+</html>
