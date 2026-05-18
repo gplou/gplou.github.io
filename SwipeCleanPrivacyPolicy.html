@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>SwipeClean — Privacy Policy</title>
+    <script>
+      // ─── EDIT THESE TWO VALUES ─────────────────────────────
+      window.PRIVACY = {
+        OWNER: "gpm",
+        EMAIL: "gpmarco98@gmail.com",
+      };
+      // ───────────────────────────────────────────────────────
+    </script>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #111827;
+        --muted: #4b5563;
+        --accent: #2563eb;
+        --border: #e5e7eb;
+        --code-bg: #f3f4f6;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b0d12;
+          --fg: #e5e7eb;
+          --muted: #9ca3af;
+          --accent: #60a5fa;
+          --border: #1f2937;
+          --code-bg: #111827;
+        }
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+      }
+      header { margin-bottom: 32px; }
+      h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 40px 0 12px;
+        padding-top: 16px;
+        border-top: 1px solid var(--border);
+      }
+      h3 {
+        font-size: 1.05rem;
+        margin: 24px 0 8px;
+      }
+      p, li { color: var(--fg); }
+      .muted { color: var(--muted); font-size: 0.95rem; }
+      a { color: var(--accent); }
+      ul { padding-left: 22px; }
+      li { margin: 6px 0; }
+      code {
+        background: var(--code-bg);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.92em;
+      }
+      .toc {
+        background: var(--code-bg);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin: 24px 0 8px;
+      }
+      .toc h2 { border: none; padding: 0; margin: 0 0 8px; font-size: 1rem; }
+      .toc ol { margin: 0; padding-left: 22px; }
+      footer {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Privacy Policy</h1>
+        <p class="muted">
+          App: <strong>SwipeClean</strong><br />
+          Operator: <strong>{{OWNER}}</strong><br />
+          Contact: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br />
+          Effective date: <strong>2026-05-18</strong><br />
+          Last updated: <strong>2026-05-18</strong>
+        </p>
+      </header>
+
+      <p>
+        This Privacy Policy explains how <strong>SwipeClean</strong> ("the App",
+        "we", "us") handles information when you use our mobile application on
+        iOS and Android. We designed SwipeClean to be a
+        <strong>privacy-first, on-device</strong> photo cleanup tool: your
+        photos never leave your device.
+      </p>
+
+      <nav class="toc">
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#data">Data we access and process</a></li>
+          <li><a href="#third-parties">Third-party services</a></li>
+          <li><a href="#permissions">Device permissions</a></li>
+          <li><a href="#purposes">Purposes and legal bases</a></li>
+          <li><a href="#retention">Data retention</a></li>
+          <li><a href="#children">Children's privacy</a></li>
+          <li><a href="#rights">Your rights</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#international">International transfers</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="summary">1. Summary</h2>
+      <ul>
+        <li>
+          <strong>Your photos and videos never leave your device.</strong>
+          SwipeClean reads them locally to show them in the swipe deck and to
+          delete them (with your confirmation) through the operating system.
+        </li>
+        <li>
+          We do not run our own servers, accounts, or cloud backup of your
+          gallery.
+        </li>
+        <li>
+          We use a small number of third-party SDKs for crash reporting
+          (Sentry), advertising (Google AdMob), and in-app purchases
+          (RevenueCat). They process limited technical data as described below.
+        </li>
+        <li>
+          You can stop data processing at any time by uninstalling the App or
+          revoking permissions in your system settings.
+        </li>
+      </ul>
+
+      <h2 id="data">2. Data we access and process</h2>
+
+      <h3>2.1 Photos and videos (on-device only)</h3>
+      <p>
+        SwipeClean requests read access to your photo library so it can display
+        your media inside the swipe interface. When you confirm deletion, the
+        App asks the operating system (iOS / Android) to remove the selected
+        items from your device gallery using the system's native deletion
+        dialog. <strong>We do not upload, copy, sync, or transmit your photos
+        or videos to any server.</strong> All processing happens locally on
+        your device.
+      </p>
+
+      <h3>2.2 App settings and local state</h3>
+      <p>
+        The App stores the following information locally on your device using
+        <code>SharedPreferences</code> and <code>Hive</code>:
+      </p>
+      <ul>
+        <li>Your preferences (reminder time, frequency, session mode, etc.).</li>
+        <li>
+          A list of photo identifiers you have already reviewed, so the same
+          photos do not reappear. These identifiers are local references to
+          items in your gallery; they are not the photos themselves.
+        </li>
+        <li>
+          The internal "trash" queue of items pending deletion (also identifiers
+          only).
+        </li>
+      </ul>
+      <p>
+        This data stays on your device and is removed when you uninstall the
+        App or use the in-app reset option.
+      </p>
+
+      <h3>2.3 Local notifications</h3>
+      <p>
+        Reminders are scheduled and delivered locally by your operating system.
+        We do not send push notifications from a server and we do not collect
+        notification engagement data.
+      </p>
+
+      <h3>2.4 Diagnostic and technical data</h3>
+      <p>
+        If the App crashes or hits an unexpected error, limited diagnostic data
+        is sent to our crash-reporting provider (Sentry, see Section 3) so we
+        can fix the bug. This typically includes:
+      </p>
+      <ul>
+        <li>Crash stack trace and error type.</li>
+        <li>App version, build number, locale.</li>
+        <li>Device model, operating system version.</li>
+        <li>Non-identifying breadcrumbs (e.g. "user opened settings screen").</li>
+      </ul>
+      <p>
+        We do not deliberately attach your name, email, photos, photo content,
+        precise location, or contacts to crash reports.
+      </p>
+
+      <h2 id="third-parties">3. Third-party services</h2>
+      <p>
+        The following independent providers may process limited data on our
+        behalf or directly under their own privacy policies. We recommend you
+        review their policies.
+      </p>
+
+      <h3>3.1 Sentry (crash and error reporting)</h3>
+      <ul>
+        <li>Purpose: capture crashes and runtime errors to improve stability.</li>
+        <li>Data: stack traces, app version, device model, OS version, locale, breadcrumbs.</li>
+        <li>
+          Policy:
+          <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">
+            sentry.io/privacy
+          </a>
+        </li>
+      </ul>
+
+      <h3>3.2 Google AdMob (advertising)</h3>
+      <ul>
+        <li>
+          Purpose: showing advertising inside the App, including measurement
+          and limited personalization where allowed.
+        </li>
+        <li>
+          Data typically processed by Google: advertising identifier (IDFA on
+          iOS / Android Advertising ID), IP address, coarse device data,
+          interaction with ads.
+        </li>
+        <li>
+          On iOS, AdMob only receives the IDFA if you grant App Tracking
+          Transparency permission. If you decline, ads are served in a
+          non-personalized mode.
+        </li>
+        <li>
+          Policies:
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+            Google Privacy Policy
+          </a>
+          ·
+          <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">
+            AdMob & data
+          </a>
+        </li>
+      </ul>
+
+      <h3>3.3 RevenueCat (in-app purchases and subscriptions)</h3>
+      <ul>
+        <li>
+          Purpose: manage in-app purchases and subscription entitlements, sync
+          purchase state across reinstalls.
+        </li>
+        <li>
+          Data: an anonymous RevenueCat user ID generated on first launch,
+          purchase receipts validated with Apple App Store / Google Play, basic
+          device and platform metadata.
+        </li>
+        <li>
+          Policy:
+          <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">
+            revenuecat.com/privacy
+          </a>
+        </li>
+      </ul>
+
+      <h3>3.4 Apple App Store and Google Play</h3>
+      <p>
+        When you install, update, or purchase the App, Apple or Google process
+        data under their own privacy policies. We receive aggregate, anonymized
+        installation and purchase metrics through their dashboards. We never
+        receive your payment card or full account details.
+      </p>
+
+      <h2 id="permissions">4. Device permissions</h2>
+      <ul>
+        <li>
+          <strong>Photo library (iOS <code>NSPhotoLibraryUsageDescription</code> /
+          Android <code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>):</strong>
+          required to display and delete items from your gallery.
+        </li>
+        <li>
+          <strong>Notifications (iOS <code>NSUserNotificationsUsageDescription</code> /
+          Android <code>POST_NOTIFICATIONS</code>):</strong>
+          required to deliver local reminders you have scheduled.
+        </li>
+        <li>
+          <strong>Exact alarms / boot completed (Android
+          <code>SCHEDULE_EXACT_ALARM</code>, <code>RECEIVE_BOOT_COMPLETED</code>):</strong>
+          required so reminders fire on the time you chose, including after a
+          device restart.
+        </li>
+        <li>
+          <strong>App Tracking Transparency (iOS):</strong> optional. Used only
+          to allow Google AdMob to access the IDFA for personalized ads.
+          Declining keeps ads in non-personalized mode.
+        </li>
+      </ul>
+      <p>
+        You can revoke any of these permissions at any time in your device
+        Settings.
+      </p>
+
+      <h2 id="purposes">5. Purposes and legal bases (GDPR / UK GDPR)</h2>
+      <ul>
+        <li>
+          <strong>Providing the core App functionality</strong> (gallery
+          access, reminders, trash, purchases) — performance of a contract
+          (Art. 6(1)(b) GDPR).
+        </li>
+        <li>
+          <strong>Crash and error reporting</strong> — legitimate interest in
+          keeping the App stable and secure (Art. 6(1)(f) GDPR).
+        </li>
+        <li>
+          <strong>Advertising (non-personalized)</strong> — legitimate interest
+          in monetizing the free version (Art. 6(1)(f) GDPR).
+        </li>
+        <li>
+          <strong>Advertising (personalized)</strong> and tracking via IDFA /
+          Advertising ID — consent (Art. 6(1)(a) GDPR), obtained through the
+          system consent dialog where required.
+        </li>
+        <li>
+          <strong>Purchases and subscription management</strong> — performance
+          of a contract (Art. 6(1)(b) GDPR).
+        </li>
+      </ul>
+
+      <h2 id="retention">6. Data retention</h2>
+      <ul>
+        <li>
+          On-device data (settings, reviewed-photo IDs, trash queue) is kept
+          until you reset it from the App or uninstall the App.
+        </li>
+        <li>
+          Crash reports in Sentry are kept according to Sentry's default
+          retention (typically up to 90 days) and then deleted.
+        </li>
+        <li>
+          AdMob and RevenueCat retain technical data as described in their own
+          policies.
+        </li>
+      </ul>
+
+      <h2 id="children">7. Children's privacy</h2>
+      <p>
+        SwipeClean is not directed to children under 13 (or the equivalent
+        minimum age in your country). We do not knowingly collect data from
+        children. If you believe a child has used the App in a way that
+        requires our attention, please contact us so we can take appropriate
+        action.
+      </p>
+
+      <h2 id="rights">8. Your rights</h2>
+      <p>
+        Depending on where you live (EEA, UK, California, etc.), you may have
+        the right to:
+      </p>
+      <ul>
+        <li>Access the personal data we hold about you.</li>
+        <li>Request correction or deletion.</li>
+        <li>Object to or restrict processing.</li>
+        <li>Withdraw consent at any time (e.g. ATT on iOS).</li>
+        <li>Lodge a complaint with your local data protection authority.</li>
+      </ul>
+      <p>
+        Because we don't operate user accounts and don't hold your photos, most
+        deletion requests are satisfied by simply uninstalling the App and
+        revoking ATT consent. For crash data tied to your device, contact us at
+        <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> and we will work with
+        Sentry to delete it where feasible.
+      </p>
+
+      <h2 id="security">9. Security</h2>
+      <p>
+        Because your photos and personal preferences stay on your device, they
+        benefit from the security model of your operating system (sandboxing,
+        device encryption, screen lock). Data transmitted to third-party
+        services (Sentry, AdMob, RevenueCat, Apple, Google) is sent over
+        encrypted HTTPS connections.
+      </p>
+
+      <h2 id="international">10. International data transfers</h2>
+      <p>
+        Our third-party processors (Sentry, Google, RevenueCat, Apple) may
+        store and process data outside your country of residence, including in
+        the United States. They rely on Standard Contractual Clauses or other
+        valid transfer mechanisms under GDPR / UK GDPR.
+      </p>
+
+      <h2 id="changes">11. Changes to this policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. The "Last updated"
+        date at the top reflects the most recent change. Material changes will
+        be highlighted in the App or in an update note on this page.
+      </p>
+
+      <h2 id="contact">12. Contact</h2>
+      <p>
+        Questions, deletion requests, or privacy concerns:
+        <br />
+        <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+      </p>
+
+      <footer>
+        © 2026 {{OWNER}}. SwipeClean is not affiliated with Apple
+        Inc. or Google LLC.
+      </footer>
+    </main>
+    <script>
+      (function () {
+        var data = window.PRIVACY || {};
+        var root = document.querySelector("main");
+        if (!root) return;
+        // Replace text nodes
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+        var node;
+        while ((node = walker.nextNode())) {
+          var v = node.nodeValue;
+          if (v.indexOf("{{") === -1) continue;
+          node.nodeValue = v
+            .replace(/\{\{OWNER\}\}/g, data.OWNER || "")
+            .replace(/\{\{EMAIL\}\}/g, data.EMAIL || "");
+        }
+        // Replace mailto: hrefs
+        root.querySelectorAll('a[href^="mailto:"]').forEach(function (a) {
+          a.href = a.href.replace(/\{\{EMAIL\}\}/g, data.EMAIL || "");
+        });
+      })();
+    </script>
+  </body>
+</html>
